@@ -1,0 +1,2 @@
+INSERT INTO contacto (id, correo_personal, direccion, pais_residencia, departamento_residencia, ciudad_residencia, telefono) VALUES (1,'','','','','','')
+INSERT INTO usuario (cedula, nombre, rol, nombre_usuario, contrasena, contacto_id, fecha_nacimiento) VALUES (00000, 'admin', 'Admin', 'Admin', 'admin123', 1, '1900-01-01');
