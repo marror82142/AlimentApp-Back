@@ -59,6 +59,11 @@ public class UsuarioRestController {
 		return usr;
 	}
 	
+	@GetMapping("/usuarios/recuperar")
+	public Usuario recuperarContrasena(@RequestParam String correo){
+		return usuarioService.recuperarContrasena(correo);
+	}
+	
 	@GetMapping("/usuarios/{cedula}")
 	public Usuario show(@PathVariable Long cedula){
 		return usuarioService.findById(cedula);

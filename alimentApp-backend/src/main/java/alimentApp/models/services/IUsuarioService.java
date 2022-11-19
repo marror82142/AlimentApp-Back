@@ -12,4 +12,6 @@ public interface IUsuarioService {
 	public Usuario findById(Long cedula);
 	
 	public void delete(Long cedula);
+
+	public Usuario recuperarContrasena(String correo);
 }

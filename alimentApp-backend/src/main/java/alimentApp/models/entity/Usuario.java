@@ -27,6 +27,7 @@ public class Usuario implements Serializable {
 	private Date fechaNacimimento;
 	private String nombreUsuario;
 	private String contrasena;
+	private int codigoRecuperacion;
 	
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "contacto_id", referencedColumnName = "id")
@@ -97,6 +98,14 @@ public class Usuario implements Serializable {
 
 	public void setFechaNacimimentp(Date fechaNacimimento) {
 		this.fechaNacimimento = fechaNacimimento;
+	}
+
+	public int getCodigoRecuperacion() {
+		return codigoRecuperacion;
+	}
+
+	public void setCodigoRecuperacion(int codigoRecuperacion) {
+		this.codigoRecuperacion = codigoRecuperacion;
 	}
 	
 }
